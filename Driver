@@ -1,0 +1,20 @@
+int numberofpassengers;
+
+    public Driver(int age, String name,int numberofpassengers) {
+        super(age, name);
+        this.numberofpassengers = numberofpassengers;
+    }
+
+    @Override
+    public void takeaperson() {
+        Random ran = new Random();
+        boolean takeaperson = ran.nextBoolean();
+        System.out.println("Довезти человека - " + takeaperson);
+
+    }
+
+    @Override
+    public void speciality() {
+        System.out.println("Driver");
+    }
+}
