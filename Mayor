@@ -1,0 +1,29 @@
+double yearofwork;
+
+
+    public Mayor(int age, String name,double yearofwork) {
+        super(age, name);
+        this.yearofwork = yearofwork;
+    }
+
+    @Override
+    public void speciality() {
+        System.out.println("Mayor");
+
+    }
+
+    @Override
+    public void build() {
+        Random ran = new Random();
+        boolean build = ran.nextBoolean();
+        System.out.println("Построить дороги - " + build);
+
+    }
+
+    @Override
+    public void money() {
+        Random ran = new Random();
+        boolean money = ran.nextBoolean();
+        System.out.println("Повысить Зарплату - " + money);
+    }
+}
