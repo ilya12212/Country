@@ -1,0 +1,27 @@
+int countChildren;
+
+    public Parents(int age, String name, int countChildren) {
+        super(age, name);
+        this.countChildren = countChildren;
+    }
+
+    @Override
+    public void feed() {
+        Random ran = new Random();
+        boolean feed = ran.nextBoolean();
+        System.out.println("Покормить  - " + feed);
+
+    }
+
+    @Override
+    public void play() {
+        Random ran = new Random();
+        boolean play = ran.nextBoolean();
+        System.out.println("Поиграть с детьми - " + play);
+    }
+
+    @Override
+    public void speciality() {
+        System.out.println("Parents");
+    }
+}
